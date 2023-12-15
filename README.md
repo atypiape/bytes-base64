@@ -3,7 +3,7 @@
 For the mutual conversion of `Uint8Array` and `Base64` strings.
 
 - Very small minzipped size
-- No dependencies (no need to install Buffer) 
+- No dependencies (no need to install [Buffer](https://www.npmjs.com/package/buffer)) 
 - Compatible with `Node.js`, browser, and `Wechat-miniprogram`
 
 ----
