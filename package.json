@@ -1,0 +1,47 @@
+{
+  "name": "bytes-base64",
+  "version": "0.1.0",
+  "description": "Uint8Array <-> Base64, very small size library",
+  "type": "module",
+  "author": "Atypiape",
+  "license": "MIT",
+  "homepage": "https://github.com/atypiape/bytes-base64.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atypiape/bytes-base64.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "bytes",
+    "base64",
+    "uint8array",
+    "bytesToBase64",
+    "base64ToBytes",
+    "uint8ArrayToBase64",
+    "base64ToUint8Array",
+    "encode",
+    "decode",
+    "encodeToBase64",
+    "decodeFromBase64",
+    "wechat",
+    "wx"
+  ],
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js",
+    "require": "./dist/index.umd.cjs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && tsc --build tsconfig.declare.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
+  }
+}
