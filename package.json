@@ -1,6 +1,6 @@
 {
   "name": "bytes-base64",
-  "version": "0.3.1",
+  "version": "1.0.0",
   "description": "Uint8Array <-> Base64, very small size library",
   "type": "module",
   "author": "Atypiape",

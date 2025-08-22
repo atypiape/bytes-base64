@@ -1,18 +1,22 @@
 # Bytes-Base64
 
-For the mutual conversion of `Uint8Array` and `Base64` strings.
+For converting between `Uint8Array` and `Base64` strings. This library is primarily developed for **WeChat Mini Programs** and has been verified to work on mini programs.
 
-- Very small minzipped size
+- Extremely small compressed size
 - No dependencies (no need to install [Buffer](https://www.npmjs.com/package/buffer)) 
-- Compatible with `Node.js`, browser, and `Wechat-miniprogram`
+- Compatible with `Node.js`, browser, and `WeChat Mini Programs`
+- Tested with Jest
 
 ----
 
-用于 `Uint8Array` 和 `Base64` 字符串的相互转换。
+用于 `Uint8Array` 和 `Base64` 字符串的相互转换，此库主要为**微信小程序**开发，已在小程序上验证。
 
 - 非常小的压缩尺寸
 - 没有任何依赖（无需安装 [Buffer](https://www.npmjs.com/package/buffer)）
 - 兼容 `Node.js`、浏览器，以及**微信小程序**
+- 通过 Jest 测试
+
+![jest](docs/img/test.jpg)
 
 ## Usage
 
