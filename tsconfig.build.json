@@ -1,0 +1,20 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["lib/**/*.ts"],
+  "exclude": ["./*.ts", "src", "test"],
+  "compilerOptions": {
+    "composite": true,
+    "useDefineForClassFields": true,
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "outDir": "dist",
+    "declaration": true,
+    "declarationDir": "dist",
+    "emitDeclarationOnly": true,
+    "rootDir": "./lib"
+  }
+}

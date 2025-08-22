@@ -1,0 +1,38 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2021
+  },
+  "env": {
+    "node": true,
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["@typescript-eslint", "prettier"],
+  "rules": {
+    "complexity": ["warn", 15],
+    "prettier/prettier": "warn",
+    "import/no-anonymous-default-export": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.{js,jsx,mjs,cjs,ts,tsx}"],
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "off"
+      }
+    },
+    {
+      "files": ["next.config.js", "tools/plugin.js"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off"
+      }
+    }
+  ]
+}

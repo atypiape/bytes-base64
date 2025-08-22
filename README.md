@@ -33,13 +33,29 @@ yarn add bytes-base64
 ```javascript
 import { bytesToBase64, base64ToBytes } from 'bytes-base64';
 
-// base64 -> Uint8Array
-const bytes = base64ToBytes('5L2g5aW9IEhlbGxvIFdvcmxkICE=');
+test('[1]', () => {
+  const base64 = 'SGVsbG8gd29ybGQ=';
+  const bytes = base64ToBytes(base64);
+  expect(bytes).toEqual(new Uint8Array([72, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100]));
+});
 
-// Uint8Array -> base64
-const base64 = bytesToBase64(bytes);
+test('[2]', () => {
+  const bytes = new Uint8Array([72, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100]);
+  const base64 = bytesToBase64(bytes);
+  expect(base64).toBe('SGVsbG8gd29ybGQ=');
+});
 
-// Output: '5L2g5aW9IEhlbGxvIFdvcmxkICE='
-console.log(base64);
+test('[3]', () => {
+  const bytes = base64ToBytes('SGVsbG8gd29ybGQ=');
+  const base64 = bytesToBase64(bytes);
+  expect(base64).toBe('SGVsbG8gd29ybGQ=');
+});
+
+test('[4]', () => {
+  const bytes = new Uint8Array([72, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100]);
+  const base64 = bytesToBase64(bytes);
+  const decodedBytes = base64ToBytes(base64);
+  expect(decodedBytes).toEqual(bytes);
+});
 ```
 
