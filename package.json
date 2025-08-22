@@ -1,6 +1,6 @@
 {
   "name": "bytes-base64",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Uint8Array <-> Base64, very small size library",
   "type": "module",
   "author": "Atypiape",
@@ -13,6 +13,7 @@
   "files": [
     "dist"
   ],
+  "miniprogram": "dist",
   "keywords": [
     "bytes",
     "base64",
@@ -26,7 +27,8 @@
     "encodeToBase64",
     "decodeFromBase64",
     "wechat",
-    "wx"
+    "wx",
+    "Buffer"
   ],
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
