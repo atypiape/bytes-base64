@@ -5,7 +5,7 @@ For converting between `Uint8Array` and `Base64` strings. This library is primar
 - Extremely small compressed size
 - No dependencies (no need to install [Buffer](https://www.npmjs.com/package/buffer)) 
 - Compatible with `Node.js`, browser, and `WeChat Mini Programs`
-- Tested with Jest
+- Tested with `Jest`
 
 ----
 
@@ -14,9 +14,7 @@ For converting between `Uint8Array` and `Base64` strings. This library is primar
 - 非常小的压缩尺寸
 - 没有任何依赖（无需安装 [Buffer](https://www.npmjs.com/package/buffer)）
 - 兼容 `Node.js`、浏览器，以及**微信小程序**
-- 通过 Jest 测试
-
-![jest](docs/img/test.jpg)
+- 通过 `Jest` 测试
 
 ## Usage
 
